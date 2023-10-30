@@ -33,10 +33,40 @@
     border-right: none;
     border-bottom: 5px solid #ab9570;
     text-align: center;
+    margin-bottom: 50px;
   }
   .page-section div > p {
     width: 100%;
-  padding-left: 0px;
-  text-align: center;
+    padding-left: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .work-gallery {
+    width: 100%;
+    display: block;
+  }
+  .work-gallery > img {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    border: 5px solid #ab9570;
+    border-bottom: none;
+  }
+  .work-gallery > p {
+    padding-left: 30px;
+    width: 100%;
+    border: 5px solid #ab9570;
+    border-top: none;
+    margin-top: 0px;
+    /*position: inherit;*/
+    left: 0%;
+  }
+  .work-gallery > p:hover {
+  border: 5px solid var(--header-text);
+  border-top: none;
+  background-color: none;
+}
+.work-gallery > img:hover {
+  border-bottom: none;
 }
 }
