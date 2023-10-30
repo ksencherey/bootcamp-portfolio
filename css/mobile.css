@@ -82,3 +82,18 @@
     padding-top: 30px;
   }
 }
+
+/*Responsive to laptops and tablets*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  header > h1 {
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+  }
+  nav {
+    margin-right: 20px;
+  }
+  nav > a {
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
+}
