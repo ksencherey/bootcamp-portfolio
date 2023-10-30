@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /*font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;*/
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    sans-serif, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+
+  /* creating parallax bacck ground image*/
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--header-text);
+}
+
+p {
+  margin: 0;
+  color: var(--header-text);
+}
+
+:root {
+  /*Global variable colour*/
+  --header-text: #ededed;
+  --header-bg: #1a1a1a;
+  --nav-text-hover: yellow;
+}
+header {
+  background: var(--header-bg);
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > h1 {
+  color: var(--header-text);
+  margin-left: 50px;
+  font-size: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+}
+nav {
+  display: flex;
+  margin-right: 50px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--header-text);
+  font-size: 1.2rem;
+  margin-right: 25px;
+  padding: 10px;
+}
+
+/*Mouse over menu effect*/
+nav > a:hover {
+  color: var(--nav-text-hover);
+}
+
+/* Styling the about menu link */
+#bg-about {
+  border: 0px solid var(--header-text);
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--nav-text-hover);
+  color: var(--header-bg);
+}
+
+#bg-about:hover {
+  background-color: var(--header-text);
+}
+
+.hero-banner {
+  margin-top: 80px;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.hero-subtitle {
+  background-color: rgba(255, 255, 180, 0.7);
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  border-radius: 20px;
+}
+
+.hero-subtitle > h2 {
+  color: var(--header-bg);
+  font-size: xxx-large;
+  padding: 20px;
+}
+
+.page-wrapper {
+  margin-top: 200px;
+}
+
+/*Grid for page section*/
+.page-section {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: "heading value";
+  background-color: black;
+  opacity: 0.9;
+  padding: 100px;
+  margin-top: 200px;
+}
+.page-section > h2 {
+  grid-area: heading;
+  border-right: 5px solid #ab9570;
+  height: 100%;
+  padding-right: 30px;
+  font-size: 50px;
+  padding-top: 40%;
+  text-wrap: nowrap;
+}
+.page-section > div {
+  grid-area: value;
+}
+/*align the text like a newspaper print*/
+.page-section div > p {
+  padding-left: 20px;
+  text-align: justify;
+  text-justify: newspaper;
+}
+/*Created grid for work gallery */
+.work-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 600px 200px 200px;
+  grid-template-areas:
+    "surfer surfer"
+    "wall calculator"
+    "puzzle buddy";
+  row-gap: 20px;
+  column-gap: 20px;
+  padding-left: 20px;
+}
+.surfer {
+  grid-area: surfer;
+}
+.wall {
+  grid-area: wall;
+}
+.calculator {
+  grid-area: calculator;
+}
+.puzzle {
+  grid-area: puzzle;
+}
+.buddy {
+  grid-area: buddy;
+}
+
+/*set the width and height of gallery images*/
+.work-gallery > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid #ab9570;
+  position: relative;
+}
+
+.work-gallery > img:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+  border: 3px solid var(--header-text);
+}
+
+/* Setting the background and position of the wprk gallery text*/
+.work-gallery > p {
+  width: 200px;
+  height: 60px;
+  border-color: grey;
+  z-index: 1;
+  font-size: 20px;
+  background-color: rgba(245, 245, 245, 0.5);
+  position: relative;
+  top: 60%;
+  left: 1%;
+  color: var(--header-bg);
+}
+.work-gallery > p:hover {
+  border: 1px solid var(--header-text);
+  cursor: pointer;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+}
+
+/* Making the contact links flexible*/
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*Removing default effect on anchor element */
+.contact-links > a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/* Adding mouse hover effect to contact links */
+.contact-links > a:hover {
+  background-color: yellow;
+  color: var(--header-bg);
+  padding: 20px;
+}
+
+/*Position the contact me, about me and work headers in the middle 8*/
+.contact > h2 {
+  padding-bottom: 120px;
+}
+
+#work > h2 {
+  padding-top: 150%;
+}
+
+#about > h2 {
+  padding-top: 60px;
+}
+
+/*Style footer or page*/
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  margin-top: 100px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer >p > i{
+  color: yellow;
+}
+

@@ -1,0 +1,42 @@
+@media screen and (max-width: 600px) {
+  header {
+    display: block;
+    height: 200px;
+    width: 100%;
+  }
+  header > h1 {
+    display: none;
+  }
+  nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #bg-about {
+    width: 100vw;
+  }
+  .hero-banner {
+    margin-top: 200px;
+  }
+  .hero-subtitle {
+    left: 10%;
+  }
+  .hero-subtitle > h2 {
+    text-wrap: nowrap;
+    font-size: 1.2rem;
+  }
+  .page-section {
+    display: block;
+  }
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 5px solid #ab9570;
+    text-align: center;
+  }
+  .page-section div > p {
+    width: 100%;
+  padding-left: 0px;
+  text-align: center;
+}
+}
