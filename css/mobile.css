@@ -34,6 +34,7 @@
     border-bottom: 5px solid #ab9570;
     text-align: center;
     margin-bottom: 50px;
+    padding-top: 1%;
   }
   .page-section div > p {
     width: 100%;
@@ -62,11 +63,22 @@
     left: 0%;
   }
   .work-gallery > p:hover {
-  border: 5px solid var(--header-text);
-  border-top: none;
-  background-color: none;
-}
-.work-gallery > img:hover {
-  border-bottom: none;
-}
+    border: 5px solid var(--header-text);
+    border-top: none;
+    background-color: none;
+  }
+  .work-gallery > img:hover {
+    border-bottom: none;
+  }
+  .contact > h2 {
+    padding-bottom: 20px;
+  }
+
+  #work > h2 {
+    padding-top: 30px;
+  }
+
+  #about > h2 {
+    padding-top: 30px;
+  }
 }
