@@ -96,10 +96,28 @@
     font-size: 1.1rem;
     margin-right: 10px;
   }
-  .hero-subtitle > h2{
+  .hero-subtitle > h2 {
     text-align: center;
     text-wrap: nowrap;
     font-size: 25px;
+  }
+  .page-section {
+    display: block;
+  }
+  .page-section > h2 {
+    border-right: none;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .contact > h2 {
+    padding-bottom: 20px;
+  }
 
+  #work > h2 {
+    padding-top: 50px;
+  }
+
+  #about > h2 {
+    padding-top: 50px;
   }
 }
